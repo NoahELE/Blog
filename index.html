@@ -168,8 +168,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-10-14 21:46:20" itemprop="dateCreated datePublished" datetime="2021-10-14T21:46:20+08:00">2021-10-14</time>
+              <time title="Created: 2021-10-14 21:46:20 / Modified: 21:49:13" itemprop="dateCreated datePublished" datetime="2021-10-14T21:46:20+08:00">2021-10-14</time>
             </span>
 
           
@@ -184,70 +185,14 @@
 
       
           <h2 id="Graph-Search-Algorithms"><a href="#Graph-Search-Algorithms" class="headerlink" title="Graph Search Algorithms"></a>Graph Search Algorithms</h2><p>Revise about many graph-searching related algorithms.</p>
-<h3 id="DFS-Depth-First-Search"><a href="#DFS-Depth-First-Search" class="headerlink" title="DFS: Depth First Search"></a>DFS: Depth First Search</h3><p>Search till the leaf vertex then choose another path.</p>
-<p>It will find a path between two vertices and it’s <em>guaranteed</em> to do so, however it is <em>not guaranteed</em> to find the shortest path.</p>
-<p>works on graphs that are:</p>
-<ul>
-<li>connected</li>
-<li>unweighted</li>
-<li>directed</li>
-</ul>
-<p>Uses a stack data structure to traverse all nodes in a graph.</p>
-<p>Steps of the algorithm:</p>
-<ol>
-<li>push the root vertex to the stack</li>
-<li>while the vertex is not empty<ol>
-<li>pop a vertex out of the stack</li>
-<li>if the vertex is:<ol>
-<li>the destination, then end search</li>
-<li>marked visited, then <code>continue</code></li>
-<li>unvisited:<ol>
-<li>mark it as visited</li>
-<li>add its unvisited neighbors to the stack</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="BFS-Breadth-First-Search"><a href="#BFS-Breadth-First-Search" class="headerlink" title="BFS: Breadth First Search"></a>BFS: Breadth First Search</h3><p>Search all neighbors of a vertex then move on next level.</p>
-<p>It is <em>guaranteed</em> to find the shortest path.</p>
-<p>works on graphs that are:</p>
-<ul>
-<li>connected</li>
-<li>unweighted</li>
-<li>directed</li>
-<li>cyclic</li>
-</ul>
-<p>Uses a queue data structure to traverse all nodes in a graph.</p>
-<p>Steps of the algorithm:</p>
-<ol>
-<li>push the root vertex to the queue</li>
-<li>mark the vertex visited</li>
-<li>while the queue is not empty:<ol>
-<li>pop a vertex from queue</li>
-<li>if the vertex is:<ol>
-<li>the destination, then end search</li>
-<li>else:<ol>
-<li>mark its unvisited neighbors as visited</li>
-<li>push said neighbors to the queue</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="Uniform-Cost-Search"><a href="#Uniform-Cost-Search" class="headerlink" title="Uniform Cost Search"></a>Uniform Cost Search</h3><p>an <em>adaptation</em> of breadth-first search to make it work on weighted graph</p>
-<p>works on graphs that are:</p>
-<ul>
-<li>connected</li>
-<li>weighted: no negative edges</li>
-<li>directed</li>
-<li>cyclic</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Blog/2021/10/14/Graph-Search-Algorithms/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
