@@ -28,7 +28,7 @@
 <meta property="og:description" content="Graph Search AlgorithmsRevise about many graph-searching related algorithms.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-14T13:46:20.000Z">
-<meta property="article:modified_time" content="2021-10-14T13:49:13.663Z">
+<meta property="article:modified_time" content="2021-10-16T03:44:17.934Z">
 <meta property="article:author" content="Noah Chen">
 <meta name="twitter:card" content="summary">
 
@@ -172,10 +172,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-10-14 21:46:20 / Modified: 21:49:13" itemprop="dateCreated datePublished" datetime="2021-10-14T21:46:20+08:00">2021-10-14</time>
+              <time title="Created: 2021-10-14 21:46:20" itemprop="dateCreated datePublished" datetime="2021-10-14T21:46:20+08:00">2021-10-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-10-16 11:44:17" itemprop="dateModified" datetime="2021-10-16T11:44:17+08:00">2021-10-16</time>
+              </span>
 
           
 
@@ -254,6 +260,32 @@
 <li>directed</li>
 <li>cyclic</li>
 </ul>
+<h3 id="Dijkstra-Algorithm"><a href="#Dijkstra-Algorithm" class="headerlink" title="Dijkstra Algorithm"></a>Dijkstra Algorithm</h3><p>This algorithm find the shortest path from a vertex to all other vertices</p>
+<p>Using 2 data structures:</p>
+<ul>
+<li>a priority queue of vertices</li>
+<li>lists of:<ul>
+<li>shortest distance and</li>
+<li>preceding vertices in shortest path</li>
+</ul>
+</li>
+</ul>
+<p>The steps of this algorithm are:</p>
+<ol>
+<li>Set up auxiliary data structures</li>
+<li>While the priority queue has unexplored vertices:<ol>
+<li>Take the next vertex from the priority queue</li>
+<li>Follow its edges and update any distances</li>
+</ol>
+</li>
+</ol>
+<p>Its time complexity depends on the data structures used.</p>
+<p>If we are using a heap for the priority queue and two array, the time complexity is $O((V + E)logV)$</p>
+<p>This algorithm works on graphs that are:</p>
+<ul>
+<li>directed</li>
+<li>weighted: only guaranteed to be correct when there are no negative edges</li>
+</ul>
 
     </div>
 
@@ -331,7 +363,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph-Search-Algorithms"><span class="nav-number">1.</span> <span class="nav-text">Graph Search Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS-Depth-First-Search"><span class="nav-number">1.1.</span> <span class="nav-text">DFS: Depth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFS-Breadth-First-Search"><span class="nav-number">1.2.</span> <span class="nav-text">BFS: Breadth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uniform-Cost-Search"><span class="nav-number">1.3.</span> <span class="nav-text">Uniform Cost Search</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph-Search-Algorithms"><span class="nav-number">1.</span> <span class="nav-text">Graph Search Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS-Depth-First-Search"><span class="nav-number">1.1.</span> <span class="nav-text">DFS: Depth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFS-Breadth-First-Search"><span class="nav-number">1.2.</span> <span class="nav-text">BFS: Breadth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uniform-Cost-Search"><span class="nav-number">1.3.</span> <span class="nav-text">Uniform Cost Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dijkstra-Algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Dijkstra Algorithm</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
