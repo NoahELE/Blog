@@ -28,7 +28,7 @@
 <meta property="og:description" content="Graph Search AlgorithmsRevise about many graph-searching related algorithms.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-14T13:46:20.000Z">
-<meta property="article:modified_time" content="2021-10-16T03:44:17.934Z">
+<meta property="article:modified_time" content="2021-10-16T06:14:34.344Z">
 <meta property="article:author" content="Noah Chen">
 <meta name="twitter:card" content="summary">
 
@@ -181,7 +181,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-10-16 11:44:17" itemprop="dateModified" datetime="2021-10-16T11:44:17+08:00">2021-10-16</time>
+                <time title="Modified: 2021-10-16 14:14:34" itemprop="dateModified" datetime="2021-10-16T14:14:34+08:00">2021-10-16</time>
               </span>
 
           
@@ -287,6 +287,9 @@
 <li>directed</li>
 <li>weighted: only guaranteed to be correct when there are no negative edges</li>
 </ul>
+<h3 id="Floyd-Warshall-Algorithm"><a href="#Floyd-Warshall-Algorithm" class="headerlink" title="Floyd-Warshall Algorithm"></a>Floyd-Warshall Algorithm</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">1</span>;j&lt;=n;j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ( e[i][j] &gt; e[i][<span class="number">1</span>]+e[<span class="number">1</span>][j] )</span><br><span class="line">            e[i][j] = e[i][<span class="number">1</span>]+e[<span class="number">1</span>][j];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>For every intermediate vertex check if there is a shorter path from start to end point through the intermediate.</p>
 
     </div>
 
@@ -364,7 +367,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph-Search-Algorithms"><span class="nav-number">1.</span> <span class="nav-text">Graph Search Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS-Depth-First-Search"><span class="nav-number">1.1.</span> <span class="nav-text">DFS: Depth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFS-Breadth-First-Search"><span class="nav-number">1.2.</span> <span class="nav-text">BFS: Breadth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uniform-Cost-Search"><span class="nav-number">1.3.</span> <span class="nav-text">Uniform Cost Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dijkstra-Algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Dijkstra Algorithm</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph-Search-Algorithms"><span class="nav-number">1.</span> <span class="nav-text">Graph Search Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS-Depth-First-Search"><span class="nav-number">1.1.</span> <span class="nav-text">DFS: Depth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFS-Breadth-First-Search"><span class="nav-number">1.2.</span> <span class="nav-text">BFS: Breadth First Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uniform-Cost-Search"><span class="nav-number">1.3.</span> <span class="nav-text">Uniform Cost Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dijkstra-Algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Dijkstra Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Floyd-Warshall-Algorithm"><span class="nav-number">1.5.</span> <span class="nav-text">Floyd-Warshall Algorithm</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
