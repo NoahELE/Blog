@@ -2,6 +2,7 @@
 title: Graph Search Algorithms
 date: 2021-10-14 21:46:20
 tags:
+mathjax: true
 ---
 
 ## Graph Search Algorithms
@@ -94,7 +95,7 @@ The steps of this algorithm are:
 
 Its time complexity depends on the data structures used.
 
-If we are using a heap for the priority queue and two array, the time complexity is $O((V + E)logV)$
+If we are using a heap for the priority queue and two array, the time complexity is $$O((V + E)logV)$$
 
 This algorithm works on graphs that are:
 
@@ -104,10 +105,10 @@ This algorithm works on graphs that are:
 ### Floyd-Warshall Algorithm
 
 ```C
-for (i=1;i<=n;i++) {
-    for (j=1;j<=n;j++) {
-        if ( e[i][j] > e[i][1]+e[1][j] )
-            e[i][j] = e[i][1]+e[1][j];
+for (i = 1; i <= n; i++) {
+    for (j = 1; j <= n; j++) {
+        if (e[i][j] > e[i][1] + e[1][j])
+            e[i][j] = e[i][1] + e[1][j];
     }
 }
 ```
