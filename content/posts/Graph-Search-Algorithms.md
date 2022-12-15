@@ -15,9 +15,9 @@ It will find a path between two vertices and it's _guaranteed_ to do so, however
 
 works on graphs that are:
 
-- connected
-- unweighted
-- directed
+1. connected
+2. unweighted
+3. directed
 
 Uses a stack data structure to traverse all nodes in a graph.
 
