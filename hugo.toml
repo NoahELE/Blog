@@ -21,9 +21,6 @@ showCodeCopyButtons = true
 [params.profileMode]
 enabled = true
 
-[[params.profileMode.buttons]]
-name = 'Search'
-url = '/Blog/search'
 
 [[params.profileMode.buttons]]
 name = 'Posts'
@@ -34,8 +31,20 @@ name = 'Archives'
 url = '/Blog/archives'
 
 [[params.socialIcons]]
-name = 'Github'
+name = 'email'
+url = 'mailto:noah.x.chen@outlook.com'
+
+[[params.socialIcons]]
+name = 'cv'
+url = ''
+
+[[params.socialIcons]]
+name = 'github'
 url = 'https://github.com/NoahELE'
+
+[[params.socialIcons]]
+name = 'rss'
+url = '/Blog/index.xml'
 
 [[menu.main]]
 identifier = 'search'
