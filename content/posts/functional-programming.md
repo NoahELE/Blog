@@ -1,7 +1,7 @@
 ---
-title: 'Functional Programming'
+title: Functional Programming
 date: 2023-09-18T18:47:30+10:00
-draft: true
+draft: false
 ---
 
 ## Pipe Operator

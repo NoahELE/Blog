@@ -1,7 +1,7 @@
 ---
-title: "Java Related"
+title: Java Related
 date: 2023-07-23T21:21:15+10:00
-draft: true
+draft: false
 ---
 
 ## Java
