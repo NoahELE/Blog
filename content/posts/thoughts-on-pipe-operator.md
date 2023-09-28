@@ -4,7 +4,7 @@ date: 2023-09-18T18:47:30+10:00
 draft: false
 ---
 
-Recently I've been attracted by the pipe operator in Elixir, which is `|>`. It's a very simple operator, but it can make the code more readable and easier to understand. It helps write clean code like this:
+Recently I've been playing with Elixir and found a interesting operator called Pipe, which is `|>`. Elixir makes use of it to pipe a function's output to another function. It helps to write clean code like this:
 
 ```elixir
 "hello world" |> String.upcase() |> String.split(" ") |> Enum.reverse() |> Enum.join(" ")
