@@ -41,7 +41,9 @@ func doSomething() (any, error) {
 }
 ```
 
-If you want to write safe code you'll have to write the boilerplate once and once again. And if you just write unsafe code, it's way cleaner and more elegant, and there is nothing in the language that stops you from doing that. A good language design should make writing safe code easier and unsafe code harder. At least there should be a syntax sugar to simplify this, since 90% of the time you just want to return the error.
+If you want to write safe code you'll have to write the boilerplate once and once again. And if you just write unsafe code, it's way cleaner and more elegant, and there is nothing in the language that stops you from doing that.
+
+A good language design should make writing safe code easier and unsafe code harder. At least there should be a syntax sugar to simplify this, since 90% of the time you just want to return the error.
 
 ### `defer` is not Block Scoped
 
@@ -113,4 +115,6 @@ Go has no way to ensure immutability. If you declare a global map or slice, you 
 
 ### Too Strict Compiler
 
-I think it is common for programmers to comment out some code for debugging purpose. But if you comment out all the lines that use an import, Go will complain that the import is unused. You have to delete the import line to make it work. And when you uncomment the code, you have to add the import line back. It's just so annoying. It is also the same case for unused variables. Shouldn't this be linter's job? Why would the compiler care about this?
+I think it is common for programmers to comment out some code for debugging purpose. But if you comment out all the lines that use an import, Go will complain that the import is unused. You have to delete the import line to make it work. And when you uncomment the code, you have to add the import line back. It's just so annoying. It is also the same case for unused variables.
+
+Shouldn't this be linter's job? Why would the compiler care about this?
