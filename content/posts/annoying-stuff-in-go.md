@@ -118,3 +118,19 @@ Go has no way to ensure immutability. If you declare a global map or slice, you 
 I think it is common for programmers to comment out some code for debugging purpose. But if you comment out all the lines that use an import, Go will complain that the import is unused. You have to delete the import line to make it work. And when you uncomment the code, you have to add the import line back. It's just so annoying. It is also the same case for unused variables.
 
 Shouldn't this be linter's job? Why would the compiler care about this?
+
+### Including `map` as Built-in Data Type
+
+Golang did a terrible choice by making `map` a built-in data type. This causes all map related operations are done on the syntax level, one example is checking existence
+
+```go
+if _, ok := m[k]; ok {
+  // ...
+}
+```
+
+Since `map` is a built-in data type, the language designers decide not to define methods on it. Instead golang has to introduce this weird syntax to check existence. It also makes it impossible to map, filter or fold on a map. You have to write a for loop to do that.
+
+To use a `set`, one has to define something like `map[int]struct{}`, which is just ugly.
+
+`map` as a built-in data type also create additional difficulty when adding generics to the language.
