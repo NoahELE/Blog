@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on NoahELE's Blog</title><link>https://noahele.github.io/Blog/posts/</link><description>Recent content in Posts on NoahELE's Blog</description><generator>Hugo -- 0.134.1</generator><language>en</language><lastBuildDate>Wed, 14 Aug 2024 21:21:33 +1000</lastBuildDate><atom:link href="https://noahele.github.io/Blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Lambda</title><link>https://noahele.github.io/Blog/posts/java-lambda/</link><pubDate>Wed, 14 Aug 2024 21:21:33 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/java-lambda/</guid><description>&lt;h2 id="javas-lambda">Java&amp;rsquo;s Lambda&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on NoahELE's Blog</title><link>https://noahele.github.io/Blog/posts/</link><description>Recent content in Posts on NoahELE's Blog</description><generator>Hugo -- 0.135.0</generator><language>en</language><lastBuildDate>Wed, 14 Aug 2024 21:21:33 +1000</lastBuildDate><atom:link href="https://noahele.github.io/Blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Java Lambda</title><link>https://noahele.github.io/Blog/posts/java-lambda/</link><pubDate>Wed, 14 Aug 2024 21:21:33 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/java-lambda/</guid><description>&lt;h2 id="javas-lambda">Java&amp;rsquo;s Lambda&lt;/h2>
 &lt;p>Java&amp;rsquo;s Lambda is actually a syntax sugar for anonymous implementation for functional interfaces. For example, the 2 are equivalent:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Java" data-lang="Java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String&lt;span style="color:#f92672">[]&lt;/span> args) {
@@ -10,13 +10,15 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Annoying Stuff in Go</title><link>https://noahele.github.io/Blog/posts/annoying-stuff-in-go/</link><pubDate>Fri, 03 Nov 2023 15:30:12 +1100</pubDate><guid>https://noahele.github.io/Blog/posts/annoying-stuff-in-go/</guid><description>&lt;p>In this blog I want to complain about some annoying stuff in Go. I&amp;rsquo;m not saying that Go is bad, in fact I love Go for its simplicity and ease of use. It&amp;rsquo;s just that there are some designs in Go that ruin the experience for me.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Note: the variables captured by the lambda must be final or effectively final.&lt;/p>
+&lt;/blockquote></description></item><item><title>Annoying Stuff in Go</title><link>https://noahele.github.io/Blog/posts/annoying-stuff-in-go/</link><pubDate>Fri, 03 Nov 2023 15:30:12 +1100</pubDate><guid>https://noahele.github.io/Blog/posts/annoying-stuff-in-go/</guid><description>&lt;p>In this blog I want to complain about some annoying stuff in Go. I&amp;rsquo;m not saying that Go is bad, in fact I love Go for its simplicity and ease of use. It&amp;rsquo;s just that there are some designs in Go that ruin the experience for me.&lt;/p>
 &lt;h3 id="ugly-error-handling">Ugly Error Handling&lt;/h3>
 &lt;p>I&amp;rsquo;ll put a disclaimer here that I&amp;rsquo;m not a fan of exceptions either. I think exceptions are a bad idea in general. But I think Go&amp;rsquo;s error handling is even worse. Go&amp;rsquo;s error handling actually encourage those who are lazy and punish those who want to write good code.&lt;/p></description></item><item><title>Thoughts on Pipe Operator</title><link>https://noahele.github.io/Blog/posts/thoughts-on-pipe-operator/</link><pubDate>Mon, 18 Sep 2023 18:47:30 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/thoughts-on-pipe-operator/</guid><description>&lt;p>Recently I&amp;rsquo;ve been playing with Elixir and found a interesting operator called Pipe, which is &lt;code>|&amp;gt;&lt;/code>. Elixir makes use of it to pipe a function&amp;rsquo;s output to another function. It helps to write clean code like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elixir" data-lang="elixir">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&amp;#34;hello world&amp;#34;&lt;/span> &lt;span style="color:#f92672">|&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">String&lt;/span>&lt;span style="color:#f92672">.&lt;/span>upcase() &lt;span style="color:#f92672">|&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">String&lt;/span>&lt;span style="color:#f92672">.&lt;/span>split(&lt;span style="color:#e6db74">&amp;#34; &amp;#34;&lt;/span>) &lt;span style="color:#f92672">|&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">Enum&lt;/span>&lt;span style="color:#f92672">.&lt;/span>reverse() &lt;span style="color:#f92672">|&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">Enum&lt;/span>&lt;span style="color:#f92672">.&lt;/span>join(&lt;span style="color:#e6db74">&amp;#34; &amp;#34;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># instead of&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">Enum&lt;/span>&lt;span style="color:#f92672">.&lt;/span>join(&lt;span style="color:#a6e22e">Enum&lt;/span>&lt;span style="color:#f92672">.&lt;/span>reverse(&lt;span style="color:#a6e22e">String&lt;/span>&lt;span style="color:#f92672">.&lt;/span>split(&lt;span style="color:#a6e22e">String&lt;/span>&lt;span style="color:#f92672">.&lt;/span>upcase(&lt;span style="color:#e6db74">&amp;#34;hello world&amp;#34;&lt;/span>), &lt;span style="color:#e6db74">&amp;#34; &amp;#34;&lt;/span>)), &lt;span style="color:#e6db74">&amp;#34; &amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Javascript Related</title><link>https://noahele.github.io/Blog/posts/javascript-related/</link><pubDate>Sun, 23 Jul 2023 21:26:16 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/javascript-related/</guid><description/></item><item><title>Java Related</title><link>https://noahele.github.io/Blog/posts/java-related/</link><pubDate>Sun, 23 Jul 2023 21:21:15 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/java-related/</guid><description>&lt;h2 id="java">Java&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>But then I found that pipeline operator is not so common in other languages I know like Java, JavaScript and Python. It took me some time to realize that its equivalent in OOP world is just chaining methods due to the implicit &lt;code>this&lt;/code> parameter in object methods. For example, in JavaScript, we can write:&lt;/p></description></item><item><title>Javascript Related</title><link>https://noahele.github.io/Blog/posts/javascript-related/</link><pubDate>Sun, 23 Jul 2023 21:26:16 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/javascript-related/</guid><description/></item><item><title>Java Related</title><link>https://noahele.github.io/Blog/posts/java-related/</link><pubDate>Sun, 23 Jul 2023 21:21:15 +1000</pubDate><guid>https://noahele.github.io/Blog/posts/java-related/</guid><description>&lt;h2 id="java">Java&lt;/h2>
 &lt;ul>
 &lt;li>The reason why &lt;code>record&lt;/code> classes have accessor methods instead of public final attributes:
 &lt;ul>
@@ -54,4 +56,27 @@
 &lt;li>unweighted&lt;/li>
 &lt;li>directed&lt;/li>
 &lt;/ol>
-&lt;p>Uses a stack data structure to traverse all nodes in a graph.&lt;/p></description></item></channel></rss>
+&lt;p>Uses a stack data structure to traverse all nodes in a graph.&lt;/p>
+&lt;p>Steps of the algorithm:&lt;/p>
+&lt;ol>
+&lt;li>push the root vertex to the stack&lt;/li>
+&lt;li>while the vertex is not empty
+&lt;ol>
+&lt;li>pop a vertex out of the stack&lt;/li>
+&lt;li>if the vertex is:
+&lt;ol>
+&lt;li>the destination, then end search&lt;/li>
+&lt;li>marked visited, then &lt;code>continue&lt;/code>&lt;/li>
+&lt;li>unvisited:
+&lt;ol>
+&lt;li>mark it as visited&lt;/li>
+&lt;li>add its unvisited neighbors to the stack&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="bfs-breadth-first-search">BFS: Breadth First Search&lt;/h2>
+&lt;p>Search all neighbors of a vertex then move on next level.&lt;/p></description></item></channel></rss>
