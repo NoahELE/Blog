@@ -1,5 +1,5 @@
 ---
-title: @Bean in @Configuration or @Component
+title: "@Bean in @Configuration or @Component"
 date: 2025-01-28T22:47:53+08:00
 draft: true
 ---
